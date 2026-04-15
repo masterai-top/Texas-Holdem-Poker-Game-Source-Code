@@ -23,13 +23,6 @@ Ready for development, customization, and deployment.
 
 ---
 
-## 🎮 Demo | 演示
-
-👉 See gameplay preview below  
-
-（这里一定放截图！！！）
-
----
 
 ## ✨ Key Features | 核心功能 | 核心功能
 
@@ -44,19 +37,26 @@ Ready for development, customization, and deployment.
 
 ## ⚡ Quick Start | 快速开始 | 快速開始
 
-```bash
-npm install
-node server.js
-
-# 🎰 德州扑克完整运营级源码 | Texas Hold'em Complete Source Code | 德州撲克完整營運級源碼
 
 > **线上稳定运营多年 | 支持联盟/俱乐部/私人局 | 媲美hhpoker, wpk | 源码+美术+运维脚本**
 
-[![Platform](https://img.shields.io/badge/平台-Linux%20%7C%20Windows-blue)]()
-[![Database](https://img.shields.io/badge/数据库-MySQL%20%7C%20Redis-green)]()
-[![Contact](https://img.shields.io/badge/联系-TG%3A%40xuzongbin001-orange)](https://t.me/xuzongbin001)
+## 🎮 Demo | 演示
+
+👉 See gameplay preview below  
+
+![微信图片_20241029191811 - 副本](https://github.com/user-attachments/assets/31da98f9-d812-4501-9756-d7e9efe08f12)
+![优化-9人桌](https://github.com/user-attachments/assets/1dc7be3e-eee3-4bfb-98ef-27b428bcc3fa)
+![微信图片_20241031110830](https://github.com/user-attachments/assets/af9ed4cc-a4fb-4901-a96b-3b3cf7abaaf1)
+![微信图片_20241031110826](https://github.com/user-attachments/assets/fc8b80b7-7732-4a70-9ff3-99e3c6004db5)
+![微信图片_20241031110821](https://github.com/user-attachments/assets/cac8a5e5-7898-45c2-ad19-0be183961f00)
+![微信图片_20241031110816](https://github.com/user-attachments/assets/1d991a2f-1315-4a2d-932d-57002f0d36d8)
+![微信图片_20241029191842](https://github.com/user-attachments/assets/c5b8c91f-4eaa-4391-a6b8-f3ac17a0003c)
+![微信图片_20241029191835](https://github.com/user-attachments/assets/5ac3245e-d395-4837-b347-dcffd94daf14)
+![微信图片_20241029191822](https://github.com/user-attachments/assets/50a898dc-2e69-471b-9022-cc18eb7b5f69)
+![微信图片_20241029191811 - 副本](https://github.com/user-attachments/assets/ac84cd0c-6eea-4009-ad63-2bcb574847cb)
 
 ---
+
 
 ## 🇨🇳 简体中文
 
@@ -212,16 +212,7 @@ This is a **fully operational, battle-tested** Texas Hold'em complete solution, 
 3.  **联系 TG @xuzongbin001**，备注“GitHub源码咨询”。
 
 
-### ⭐ 产品运行图
 
 
-![微信图片_20241029191811 - 副本](https://github.com/user-attachments/assets/31da98f9-d812-4501-9756-d7e9efe08f12)
-![优化-9人桌](https://github.com/user-attachments/assets/1dc7be3e-eee3-4bfb-98ef-27b428bcc3fa)
-![微信图片_20241031110830](https://github.com/user-attachments/assets/af9ed4cc-a4fb-4901-a96b-3b3cf7abaaf1)
-![微信图片_20241031110826](https://github.com/user-attachments/assets/fc8b80b7-7732-4a70-9ff3-99e3c6004db5)
-![微信图片_20241031110821](https://github.com/user-attachments/assets/cac8a5e5-7898-45c2-ad19-0be183961f00)
-![微信图片_20241031110816](https://github.com/user-attachments/assets/1d991a2f-1315-4a2d-932d-57002f0d36d8)
-![微信图片_20241029191842](https://github.com/user-attachments/assets/c5b8c91f-4eaa-4391-a6b8-f3ac17a0003c)
-![微信图片_20241029191835](https://github.com/user-attachments/assets/5ac3245e-d395-4837-b347-dcffd94daf14)
-![微信图片_20241029191822](https://github.com/user-attachments/assets/50a898dc-2e69-471b-9022-cc18eb7b5f69)
-![微信图片_20241029191811 - 副本](https://github.com/user-attachments/assets/ac84cd0c-6eea-4009-ad63-2bcb574847cb)
+
+
