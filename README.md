@@ -1,9 +1,16 @@
 # 🃏 Texas Holdem Poker Game Source Code  
 # 德州扑克源码 | 德州撲克源碼  
 
-🔥 Online Multiplayer Poker System  
-🔥 Club System + Agent System  
-🔥 Real-Time Gameplay + Full Source Code  
+💡 Build your own poker platform in minutes  
+💡 快速搭建属于你的德州扑克平台  
+💡 快速建立自己的德州撲克系統  
+
+🔥 Online Multiplayer System  
+🔥 Club + Agent System  
+🔥 Real-Time Gameplay  
+
+👉 🚀 Demo Available  
+👉 📩 Contact for Full Version  
 
 ---
 
@@ -40,9 +47,12 @@ Ready for development, customization, and deployment.
 
 > **线上稳定运营多年 | 支持联盟/俱乐部/私人局 | 媲美hhpoker, wpk | 源码+美术+运维脚本**
 
-## 🎮 Demo | 演示
 
-👉 See gameplay preview below  
+## 🎮 Demo | 演示 | 演示
+
+See real gameplay below 👇  
+查看游戏实际画面 👇  
+查看實際遊戲畫面 👇  
 
 ![微信图片_20241029191811 - 副本](https://github.com/user-attachments/assets/31da98f9-d812-4501-9756-d7e9efe08f12)
 ![优化-9人桌](https://github.com/user-attachments/assets/1dc7be3e-eee3-4bfb-98ef-27b428bcc3fa)
@@ -56,8 +66,9 @@ Ready for development, customization, and deployment.
 ![微信图片_20241029191811 - 副本](https://github.com/user-attachments/assets/ac84cd0c-6eea-4009-ad63-2bcb574847cb)
 
 ---
-
-
+![Stars](https://img.shields.io/github/stars/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-?style=social)
+![Last Update](https://img.shields.io/github/last-commit/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-)
+🚀 Perfect for building poker apps, platforms, or learning real-time game development
 ## 🇨🇳 简体中文
 
 ### 🔥 为什么选择这套源码？
@@ -99,7 +110,7 @@ Ready for development, customization, and deployment.
 ### 💰 合作与购买
 
 **我们提供源码授权、定制开发、技术维护一条龙服务。**
-
+💼 Commercial version with full features available
 -   **联系方式**：📱 **Telegram：@xuzongbin001**
 -   **备用邮箱**：📧 **masterai918@gmail.com**
 
