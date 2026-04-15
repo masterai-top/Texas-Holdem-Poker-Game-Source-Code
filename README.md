@@ -1,5 +1,4 @@
-# 🃏 Texas Holdem Poker Game Source Code  
-# 德州扑克源码 | 德州撲克源碼  
+# 🃏 Texas Holdem Poker Game Source Code   德州扑克源码 | 德州撲克源碼  
 
 💡 Build your own poker platform in minutes  
 💡 快速搭建属于你的德州扑克平台  
@@ -108,9 +107,10 @@ See real gameplay below 👇
 -   部署运维脚本和文档
 
 ### 💰 合作与购买
+💼 Commercial version with full features available  
+💼 提供完整商业版本与部署支持  
+💼 提供完整商業版本與部署支援  
 
-**我们提供源码授权、定制开发、技术维护一条龙服务。**
-💼 Commercial version with full features available
 -   **联系方式**：📱 **Telegram：@xuzongbin001**
 -   **备用邮箱**：📧 **masterai918@gmail.com**
 
