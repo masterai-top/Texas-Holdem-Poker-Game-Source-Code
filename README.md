@@ -24,7 +24,7 @@
 - **安全风控**：服务端防作弊验证、TLS 加密、DDoS 防护、日志监控
 - **全套资源**：高清 UI 素材、音效、动画、牌型判断引擎等
 
-## 📸 界面展示（强烈建议上传真实截图）
+## 📸 界面展示
 
 ![微信图片_20241029191811 - 副本](https://github.com/user-attachments/assets/31da98f9-d812-4501-9756-d7e9efe08f12)
 ![优化-9人桌](https://github.com/user-attachments/assets/1dc7be3e-eee3-4bfb-98ef-27b428bcc3fa)
