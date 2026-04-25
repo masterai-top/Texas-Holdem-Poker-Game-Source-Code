@@ -90,6 +90,15 @@ cd Texas-Holdem-Poker-Game-Source-Code
 - Email：masterai918@gmail.com  
 
 有任何问题也欢迎提交 Issue 或 Pull Request。
+
+## 💼 Monetization and Business Model | 盈利模式
+
+- **SaaS Deployment**: Offer the poker game engine as a service, allowing businesses to launch their own online poker platforms.
+- **White-label Solution**: Provide a fully customizable version of the game that can be branded and tailored to specific business needs.
+- **API Integration**: Allow other platforms to integrate poker games via API for multiplayer interaction.
+
+Perfect for online casinos, gaming companies, and social gaming platforms.
+
 Star 支持一下项目，让我们一起把这个德州扑克源码做得更好！
 
 
