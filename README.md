@@ -24,7 +24,13 @@
 - **安全风控**：服务端防作弊验证、TLS 加密、DDoS 防护、日志监控
 - **全套资源**：高清 UI 素材、音效、动画、牌型判断引擎等
 
-## 📸 界面展示
+##📞 Contact |联系我们
+
+- Telegram：@xuzongbin001  
+- Email：masterai918@gmail.com  
+
+有任何问题也欢迎提交 Issue 或 Pull Request。
+## 📸 界面展示,真实产品演示：
 
 ![微信图片_20241029191811 - 副本](https://github.com/user-attachments/assets/31da98f9-d812-4501-9756-d7e9efe08f12)
 ![优化-9人桌](https://github.com/user-attachments/assets/1dc7be3e-eee3-4bfb-98ef-27b428bcc3fa)
@@ -84,12 +90,6 @@ cd Texas-Holdem-Poker-Game-Source-Code
 请遵守当地法律法规，严禁用于非法用途。
 
 
-##📞 Contact |联系我们
-
-- Telegram：@xuzongbin001  
-- Email：masterai918@gmail.com  
-
-有任何问题也欢迎提交 Issue 或 Pull Request。
 
 ## 💼 Monetization and Business Model | 盈利模式
 
