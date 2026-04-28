@@ -1,0 +1,527 @@
+fileFormatVersion: 2
+guid: 53f39c41c4b6ebf4786d8ad1c0e2c1d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 287782138822761397
+    second: btn_live_maikefeng
+  - first:
+      213: -8482053697676899423
+    second: icon_live_bigmaikefeng_off
+  - first:
+      213: 4819896759173313415
+    second: icon_live_bigmaikefeng_on
+  - first:
+      213: 3640517030080399546
+    second: icon_live_bigshexiangtou_off
+  - first:
+      213: -3854024078920548692
+    second: icon_live_bigshexiangtou_on
+  - first:
+      213: 4359297405378946410
+    second: icon_live_fangjiang
+  - first:
+      213: 6794370892601040239
+    second: icon_live_luyin
+  - first:
+      213: -983757047388578359
+    second: icon_live_nowangluo
+  - first:
+      213: -2555843370490194979
+    second: icon_live_shengying
+  - first:
+      213: 5064416621765305031
+    second: icon_live_smallmaikefeng_off
+  - first:
+      213: -1449705518033135203
+    second: icon_live_smallmaikefeng_on
+  - first:
+      213: -2350535976024305812
+    second: icon_live_yinliang0
+  - first:
+      213: -2466875534086105226
+    second: icon_live_yinliang1
+  - first:
+      213: -1849603769149015515
+    second: icon_live_zhaoxiang
+  - first:
+      213: -4755530197483996405
+    second: img_live_liuzuo1
+  - first:
+      213: -4624974611935445461
+    second: img_live_liuzuo2
+  - first:
+      213: 8084233212814383360
+    second: img_live_touxiangkuang
+  - first:
+      213: -8961516375191225953
+    second: pb_live_tianchong
+  - first:
+      213: -4670397538801016067
+    second: pb_live_tianchongbig
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: btn_live_maikefeng
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 18
+        width: 36
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5138889, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb9b3d94586ef300800000000000000
+      internalID: 287782138822761397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_bigmaikefeng_off
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 22
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab0e201a11b94a80800000000000000
+      internalID: -8482053697676899423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_bigmaikefeng_on
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 22
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783f498c096b3e240800000000000000
+      internalID: 4819896759173313415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_bigshexiangtou_off
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 16
+        width: 60
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46226415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8c3b853f6b58230800000000000000
+      internalID: 3640517030080399546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_bigshexiangtou_on
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 31
+        width: 60
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.56578946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae732c0581c38ac0800000000000000
+      internalID: -3854024078920548692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_fangjiang
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 4
+        width: 40
+        height: 25
+      alignment: 9
+      pivot: {x: 0.4875, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65e4e5c4e55f7c30800000000000000
+      internalID: 4359297405378946410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_luyin
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 148
+        width: 80
+        height: 131
+      alignment: 9
+      pivot: {x: 0.49375, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d1db524547a4e50800000000000000
+      internalID: 6794370892601040239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_nowangluo
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 281
+        width: 86
+        height: 113
+      alignment: 9
+      pivot: {x: 0.5116279, y: 0.49115044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cddd157d2ef852f0800000000000000
+      internalID: -983757047388578359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_smallmaikefeng_off
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 2
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2a7e6c51c684640800000000000000
+      internalID: 5064416621765305031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_smallmaikefeng_on
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 80
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9916b0238c91ebe0800000000000000
+      internalID: -1449705518033135203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_yinliang0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f8b45cbf7316fd0800000000000000
+      internalID: -2350535976024305812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_yinliang1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 4
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67712b595c5e3cdd0800000000000000
+      internalID: -2466875534086105226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_live_zhaoxiang
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 11
+        width: 121
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5053192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a36aceb23e456e0800000000000000
+      internalID: -1849603769149015515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img_live_liuzuo1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 71
+        width: 178
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0bb2543b76f00eb0800000000000000
+      internalID: -4755530197483996405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img_live_liuzuo2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 107
+        width: 132
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e3368381ac0dfb0800000000000000
+      internalID: -4624974611935445461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img_live_touxiangkuang
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 473
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00957336647f03070800000000000000
+      internalID: 8084233212814383360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pb_live_tianchong
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 396
+        width: 98
+        height: 115
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5043478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9971ef365c42a380800000000000000
+      internalID: -8961516375191225953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pb_live_tianchongbig
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 285
+        width: 191
+        height: 226
+      alignment: 9
+      pivot: {x: 0.4947644, y: 0.49778762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df228ebee2a6f2fb0800000000000000
+      internalID: -4670397538801016067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
