@@ -65,6 +65,11 @@
 ## 🎥 视频演示
 
 完整牌局 + 后台操作演示：
+
+
+(https://www.youtube.com/watch?v=job2jRcSnl4)]([https://www.facebook.com/share/v/1LHRj4he6A/?mibextid=wwXIfr](https://www.youtube.com/watch?v=job2jRcSnl4)))
+
+
 [点击观看演示视频]([https://www.facebook.com/share/v/1LHRj4he6A/?mibextid=wwXIfr](https://www.facebook.com/share/v/1LHRj4he6A/?mibextid=wwXIfr))
 
 
