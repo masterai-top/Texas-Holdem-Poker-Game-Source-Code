@@ -38,7 +38,7 @@
 
 ## 🚀 产品演示视频（强烈推荐观看）
 
-[![德州扑克完整功能演示](https://img.youtube.com/vi/adHRqfHmj0Q/maxresdefault.jpg)](https://www.youtube.com/shorts/adHRqfHmj0Q)
+[![德州扑克完整功能演示](https://www.youtube.com/watch?v=job2jRcSnl4)](https://www.youtube.com/watch?v=job2jRcSnl4)
 
 **德州扑克完整功能演示视频**  
 金币大厅 + 俱乐部系统 + 多锦标赛 + 短牌玩法 + 实时对战
@@ -65,7 +65,6 @@
 ## 🎥 视频演示
 
 完整牌局 + 后台操作演示：
-
 
 
 [点击观看演示视频]([https://www.youtube.com/watch?v=job2jRcSnl4](https://www.youtube.com/watch?v=job2jRcSnl4))
