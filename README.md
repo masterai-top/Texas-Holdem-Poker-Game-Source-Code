@@ -1,21 +1,22 @@
-# 🃏 德州扑克完整商用源码 | Texas Hold'em Poker Full Source Code|德州扑克源码 |德州俱乐部源码 | 德州撲克源碼 |德州源碼|德州撲克|德州俱樂部|德州撲克系統|Mã nguồn Poker
+# 德州扑克完整游戏系统（Unity + C++）
+
+[![平台](https://img.shields.io/badge/客户端-Unity%20iOS%2FAndroid-green)]()
+[![后端](https://img.shields.io/badge/服务端-C%2B%2B-red)]()
+[![许可证](https://img.shields.io/badge/许可证-专有软件-blue)]()
 
 **德州扑克源码 | 德州私人局 | 德州俱乐部源码 | 德州金币大厅 | 朋友局 | 联盟模式 | MTT/SNG | 高并发 C++ 服务端**
-
-**真实运营数年 · 支持线下验证 ·ALLIN德州扑克源码 ·八个不同德州玩法**
 
 
 **简体中文 · 繁體中文 · English· 韩文· 马来文· 日文· 泰文· 印尼语·越南文**
 
-[![Stars](https://img.shields.io/github/stars/masterai-top/Texas-Holdem-Poker-Game-Source-Code.svg)](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code/stargazers)
-[![License](https://img.shields.io/badge/License-Commercial%20Inquiry-blue.svg)](LICENSE)
-[![Language](https://img.shields.io/badge/Language-C%2B%2B%20%26%20Unity/Cocos-brightgreen.svg)](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code)
+## 项目概述
 
-一款**生产级、经过实际高并发验证**的德州扑克在线多人游戏完整解决方案。支持经典德州、短牌(6+) 、奥马哈、AOF快牌、SNG、MTT等多桌锦标赛，集成** 朋友局 + 俱乐部 + 代理联盟**系统，可直接用于商业平台搭建或二次开发。
 
-已支持万级并发，延迟低、防作弊强，客户端支持多端发布（iOS/Android//H5）。
+这是一套**完整的德州扑克游戏源代码**，包含 **Unity 客户端**与 **C++ 高性能服务端**。系统涵盖俱乐部、代理、MTT/SNG 锦标赛、多人实时对战及后台管理等功能，**可直接用于二次开发或学习研究**。
 
-[查看演示视频](#视频演示) | [立即联系获取商用授权与部署支持](#联系我们)
+> **技术亮点**：生产环境稳定运行 2 年以上 | 支持 10 余种玩法模式 | Unity 客户端适配 iOS/Android | C++ 服务端高并发支持
+
+
 
 ## ✨ 核心特性
 
@@ -29,7 +30,7 @@
 - **安全风控**：服务端防作弊验证、TLS 加密、DDoS 防护、日志监控
 - **全套资源**：高清 UI 素材、音效、动画、牌型判断引擎等
 
-##📞 Contact |联系我们
+##📞 问题反馈与交流
 
 - Telegram：@xuzongbin001  
 - Email：masterai918@gmail.com  
@@ -61,13 +62,6 @@
 ---
 ![Stars](https://img.shields.io/github/stars/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-?style=social)
 ![Last Update](https://img.shields.io/github/last-commit/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-)
-
-## 🎥 视频演示
-
-完整牌局 + 后台操作演示：
-
-
-[点击观看演示视频]([https://www.youtube.com/watch?v=job2jRcSnl4](https://www.youtube.com/watch?v=job2jRcSnl4))
 
 
 
@@ -103,8 +97,7 @@ cd Texas-Holdem-Poker-Game-Source-Code
 
 ##📜 许可说明
 本项目代码仅供学习、研究和二次开发参考。
-商业使用、部署上线或获取完整授权版（含技术支持、定制开发），请联系我们获取正式授权。
-请遵守当地法律法规，严禁用于非法用途。
+
 
 
 
