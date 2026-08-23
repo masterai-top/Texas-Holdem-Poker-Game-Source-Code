@@ -1,20 +1,141 @@
-# 德州扑克完整游戏系统（Unity + C++）
+# 德州扑克源码：C++ Texas Hold'em 游戏服务端
 
-[![平台](https://img.shields.io/badge/客户端-Unity%20iOS%2FAndroid-green)]()
-[![后端](https://img.shields.io/badge/服务端-C%2B%2B-red)]()
-[![许可证](https://img.shields.io/badge/许可证-专有软件-blue)]()
+[![Language](https://img.shields.io/badge/language-C%2B%2B-00599c?logo=cplusplus)](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code)
+[![Stars](https://img.shields.io/github/stars/masterai-top/Texas-Holdem-Poker-Game-Source-Code?style=flat)](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code/stargazers)
+[![License](https://img.shields.io/github/license/masterai-top/Texas-Holdem-Poker-Game-Source-Code)](./LICENSE)
 
-**德州扑克源码 | 德州私人局 | 德州俱乐部源码 | 德州金币大厅 | 朋友局 | 联盟模式 | MTT/SNG | 高并发 C++ 服务端**
+这是一个以 C++ 编写的德州扑克源码项目，仓库包含游戏服务端、登录服务、订单服务、用户信息、坐下/站起、牌局状态及 Tars 协议等代码，可用于学习多人扑克游戏的服务端结构、通信协议和牌局业务流程。
+
+**English:** C++ Texas Hold'em poker server source code with game-session, login, order, user and Tars protocol modules.
+
+> 当前公开仓库以服务端代码、协议文件和演示资源为主。是否包含客户端、数据库脚本、管理后台及商业部署组件，请以实际目录和授权说明为准。
+
+## 项目内容
+
+- C++ 德州扑克游戏服务端代码
+- 登录服务与用户信息模块
+- 牌桌坐下、站起及牌局状态处理
+- 订单相关服务接口
+- Tars 协议定义与服务实现
+- Makefile 编译入口
+- 产品截图和演示视频资源
+
+## 源码目录
+
+```text
+.
+|-- Bag/                    # 相关代码与资源目录
+|-- Screenshots/            # 产品截图
+|-- Video/                  # 演示视频资源
+|-- LoginProto.tars         # 登录协议定义
+|-- LoginServant.tars       # 登录服务接口
+|-- LoginServantImp.cpp     # 登录服务实现
+|-- LoginServer.cpp         # 登录服务入口
+|-- OrderServant.tars       # 订单服务接口
+|-- OrderServer.cpp         # 订单服务入口
+|-- gamestation.cpp         # 牌局状态相关逻辑
+|-- sitdown.cpp             # 坐下流程
+|-- standup.cpp             # 站起流程
+|-- userinfo.cpp            # 用户信息逻辑
+|-- Processor.cpp           # 业务处理模块
+|-- makefile                # 编译配置
+`-- LICENSE                 # 许可证
+```
+
+## 快速下载
+
+### Download ZIP
+
+点击仓库页面右上方 **Code → Download ZIP** 下载德州扑克源码。
+
+### Git 克隆
+
+```bash
+git clone https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code.git
+cd Texas-Holdem-Poker-Game-Source-Code
+```
+
+## 构建前准备
+
+该项目包含 C++、Makefile 和 Tars 协议文件。构建前请检查 `makefile` 中配置的编译器、头文件目录、链接库和目标环境，并准备与源码版本匹配的 Tars/C++ 依赖。
+
+```bash
+make
+```
+
+不同服务器环境的依赖路径可能不同，不能保证下载后无需配置即可完成编译。建议先阅读：
+
+- [`docs/build-guide.md`](./docs/build-guide.md)
+- [`docs/server-architecture.md`](./docs/server-architecture.md)
+- [`docs/protocol-guide.md`](./docs/protocol-guide.md)
+
+## 核心模块
+
+### 登录服务
+
+`LoginProto.tars`、`LoginServant.tars`、`LoginServantImp.cpp` 和 `LoginServer.cpp` 构成登录协议与服务实现的主要入口。
+
+### 牌局流程
+
+`gamestation.cpp`、`sitdown.cpp`、`standup.cpp` 和 `Processor.cpp` 等文件负责牌局状态及相关业务处理。阅读时建议从协议输入、状态变化和响应输出三个方向梳理调用关系。
+
+### 用户与订单
+
+`userinfo.cpp`、`getuserinfo.cpp` 以及 `OrderServant.tars`、`OrderServer.cpp` 等文件提供用户信息和订单相关代码入口。
+
+## 截图与视频
+
+真实界面图片保存在 [`Screenshots`](./Screenshots) 目录，视频资源保存在 [`Video`](./Video) 目录。
+
+演示视频：[Texas Hold'em Poker Demo](https://youtu.be/job2jRcSnl4)
+
+建议在 README 首屏只展示 3 至 5 张清晰截图，并为图片添加准确的中文说明，例如“德州扑克九人桌界面”“俱乐部牌局列表”，不要继续使用“微信图片”等无意义图片名称。
+
+## 适用场景
+
+- 学习 C++ 多人游戏服务端架构
+- 研究德州扑克牌局状态与用户流程
+- 阅读 Tars 接口和服务实现
+- 制作扑克游戏服务器原型
+- 为已有项目补充协议、测试和文档
+
+## 使用与合规说明
+
+扑克软件可能受到不同国家或地区关于游戏、竞赛、支付和数据保护的法律限制。部署或商业使用前，请确认：
+
+- 仓库许可证与商业授权范围
+- 第三方代码、图片、音频和字体的许可证
+- 所在地区对扑克软件和虚拟货币的规定
+- 用户年龄、隐私、支付和数据安全要求
+- 服务端随机数、牌局日志和反作弊机制是否经过审计
+
+严禁将本项目用于违法活动。
+
+## 文档导航
+
+- [德州扑克源码说明](./docs/texas-holdem-source-code.md)
+- [C++ 游戏服务端架构](./docs/server-architecture.md)
+- [构建与部署准备](./docs/build-guide.md)
+- [Tars 协议阅读指南](./docs/protocol-guide.md)
+- [牌局流程与状态管理](./docs/game-flow.md)
+- [安全、随机数与合规](./docs/security-compliance.md)
+- [常见问题](./docs/faq.md)
+
+## 参与贡献
+
+欢迎通过 Issue 或 Pull Request 提交编译修复、协议说明、测试案例、文档和安全改进。报告问题时，请提供操作系统、编译器版本、依赖版本、执行命令及完整错误信息。
+
+## 许可证与联系
+
+开源使用范围以 [`LICENSE`](./LICENSE) 为准。商业授权、完整组件范围和部署支持应在使用前单独确认。
+
+- Issues：<https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code/issues>
+- Telegram：`@xuzongbin001`
+- Email：`masterai918@gmail.com`
+
+关键词：德州源码、德州扑克源码、C++ 扑克游戏服务端、Texas Hold'em source code、poker server、multiplayer poker game。
 
 
-**简体中文 · 繁體中文 · English· 韩文· 马来文· 日文· 泰文· 印尼语·越南文**
-
-## 项目概述
-
-
-这是一套**完整的德州扑克游戏源代码**，包含 **Unity 客户端**与 **C++ 高性能服务端**。系统涵盖俱乐部、代理、MTT/SNG 锦标赛、多人实时对战及后台管理等功能，**可直接用于二次开发或学习研究**。
-
-> **技术亮点**：生产环境稳定运行 2 年以上 | 支持 10 余种玩法模式 | Unity 客户端适配 iOS/Android | C++ 服务端高并发支持
 
 
 
@@ -90,10 +211,9 @@ cd Texas-Holdem-Poker-Game-Source-Code
 ##💡 为什么选择我们？
 
 代码成熟稳定，非简单 Demo，可直接商业上线或深度定制
-完整俱乐部 + 金币 + 联盟变现体系，商业价值高
+完整俱乐部 + 金币 + 联盟体系，商业价值高
 提供全套美术资源 + 后台面板，大幅降低开发成本
-支持持续更新与技术支持
-已有多款类似平台实际运营经验参考
+
 
 ##📜 许可说明
 本项目代码仅供学习、研究和二次开发参考。
