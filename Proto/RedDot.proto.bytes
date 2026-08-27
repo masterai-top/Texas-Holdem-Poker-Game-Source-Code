@@ -1,0 +1,66 @@
+
+syntax = "proto3";
+
+option cc_generic_services=false;
+
+package GlobalProto;
+
+// 红点类型
+enum E_RedDot_Type
+{
+    E_REDDOT_TYPE_UNKNOWN      = 0;    // 所有
+    E_REDDOT_TYPE_SYS          = 1;    // 系统
+    E_REDDOT_TYPE_CLUB_TABLE   = 2;    // 俱乐部牌局
+    E_REDDOT_TYPE_CLUB_COIN    = 3;    // 俱乐部币
+    E_REDDOT_TYPE_MATCH_REWARD = 4;    // 比赛奖励
+    E_REDDOT_TYPE_WARN         = 5;    // 预警信息
+    E_REDDOT_TYPE_ACTIVITY     = 6;    // 活动
+    E_REDDOT_TYPE_CLUB_MEMBER  = 10;   // 俱乐部成员申请
+    E_REDDOT_TYPE_CLUB_CHAT    = 11;   // 俱乐部聊天
+    E_REDDOT_TYPE_FREND        = 20;   // 好友申请
+    E_REDDOT_TYPE_UNION_MEMBER = 30;   // 联盟成员申请
+};
+
+// 红点信息
+message RedDotInfo
+{
+    sint32 iType   = 1;   // 红点类型
+    sint64 lExtend = 2;   // 扩展(iType = 10时 lExtend=俱乐部ID)
+    sint32 iCount  = 3;   // 数量  
+};
+
+// 获取
+// 0 大厅中的 铃铛与我的
+// 1 点击大厅中的铃铛<里面会有E_REDDOT_TYPE_SYS 与 E_REDDOT_TYPE_CLUB_TABLE 和 E_REDDOT_TYPE_MATCH_REWARD, E_REDDOT_TYPE_WARN, E_REDDOT_TYPE_CLUB_COIN 及 E_REDDOT_TYPE_UNION_MEMBER 和 E_REDDOT_TYPE_ACTIVITY 的信息数量>
+// 2 俱乐部红点 <E_REDDOT_TYPE_CLUB_MEMBER 俱乐部申请数量>
+// 4 好友申请红点 <E_REDDOT_TYPE_FREND 好友申请数量>
+// 5 联盟申请红点 <E_REDDOT_TYPE_UNION_MEMBER 联盟晟员申请数量>
+message RedDotCheckReq
+{
+    sint32 iFlag = 1;   // 类型 0 1 2 4 5
+};
+
+message RedDotCheckResp
+{
+    sint32 resultCode          = 1;   // 结果码
+    sint32 iFlag               = 2;   // 类型
+    sint32 iRed                = 3;   // 是否有红点(位运算11 个位:铃铛 十位:我的) 只有iFlag=0的时候才有这个值
+    repeated  RedDotInfo infos = 4;   // 红点信息 只有iFlag!=0的时候才有
+};
+
+// 设置红点阅读
+message RedDotSetReq
+{
+    sint32 iType   = 1;   // 类型 E_RedDot_Type
+    sint64 lExtend = 2;   // 扩展
+};
+
+//
+message RedDotSetResp
+{
+    sint32 resultCode = 1;   // 结果码
+    sint32 iType      = 2;   // 类型 E_RedDot_Type
+    sint64 lExtend    = 3;   // 扩展
+}
+
+

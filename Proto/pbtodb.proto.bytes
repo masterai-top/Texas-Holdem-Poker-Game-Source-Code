@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+option cc_generic_services=false;
+
+package pbtodb;
+
+//经典场统计行为次数
+message ActStatisticsCount
+{
+	uint32 flop_cont2_bets = 3;    //翻牌前连续2次及以上下注的次数
+	uint32 turn_cont2_bets = 4;    //转牌前连续2次及以上下注的次数
+	uint32 flop_cont2_raises = 5;  //翻牌前连续2次及以上加注的次数
+	uint32 turn_cont2_raises = 6;  //转牌前连续2次及以上加注的次数
+	uint32 showdown_wins = 7;      //摊牌胜利次数
+	uint32 showdowns = 8;          //摊牌次数
+	uint32 bets_count = 9;         //下注次数
+    uint32 raises_count = 10;       //加注次数
+	uint32 calls_count = 11;        //跟注次数
+}
+
+//经典场统计行为局数
+message ActStatisticsRounds
+{
+    uint32 total_rounds = 1;            //总局数 
+	uint32 bet_rounds = 2;              //有下注动作的局数
+	uint32 flop_raise_rounds = 3;       //翻牌前有加注动作的局数
+	uint32 first_raise_rounds = 4;      //第一个加注的总局数
+	uint32 pos_first_raise_rounds = 5;  //在CO、BTN、SB位置上第一个加注的局数(CO:庄家右边，BTN:庄家，SB：庄家左边)
+	uint32 raise2_rounds = 6;           //一轮中有2次及以上加注动作的局数
+	uint32 flop_raise_after_bet_rounds = 7;     //翻牌前加注的玩家在翻牌时投注的局数
+	uint32 turn_raise_after_bet_rounds = 8;     //转牌前加注的玩家在转牌时投注的局数
+	uint32 flop_raise_after_flod_rounds = 9;    //翻牌前加注并且翻牌后放弃下注的局数
+	uint32 turn_raise_after_flod_rounds = 10;   //转牌前加注并且转牌后放弃下注的局数
+    uint32 join_flop_rounds = 11;   //参与的所有翻牌轮次数	
+	uint32 join_turn_rounds = 12;   //参与的所有转牌轮次数
+}
+
+//经典场统计数据
+message ActStatistics
+{
+    ActStatisticsCount act_count = 1;
+    ActStatisticsRounds act_rounds = 2;
+    repeated uint32 blind_level_list = 3;
+}
+
+//比赛场统计数据
+message KoActStatistics
+{
+	map<int32, int64> mapMatchID = 1;//first:买入金额,second:买入次数
+}

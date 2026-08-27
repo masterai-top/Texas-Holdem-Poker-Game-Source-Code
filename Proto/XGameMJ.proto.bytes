@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+option cc_generic_services=false;
+
+package XGameMJ;
+
+enum Eum_MJ_Msgid
+{
+    E_MSGID_DEFAULT = 0;
+
+    E_MJ_MSGID_ROOM_LIST_CS        = 1001;      //场次列表消息请求[CS]
+
+    E_MJ_MSGID_LOGIN_ROOM_CS       = 1002;     //登录房间消息请求[CS] 
+
+    E_MJ_MSGID_MATCH_CS            = 1003;     //匹配请求 返回[CS]
+
+    E_MJ_MSGID_MATCH_2C            = 1004;     //匹配通知[C]
+
+    E_MJ_MSGID_REMATCH_CS          = 1005;     //换桌[CS]
+
+    E_MJ_MSGID_EXIT_CS             = 1006;     //退出房间请求 返回[CS]
+
+    E_MJ_MSGID_EXIT_2C             = 1007;     //退出房间通知
+
+}
+
+//E_MJ_MSGID_ROOM_LIST_CS
+message TMJMsgRespRoomList
+{
+    message RoomInfo
+    {
+        int32 iBetId = 1;       //场次ID
+        int32 iBaseScore = 2; //底分
+        int64 lMinScore = 3; //入场限制
+        int32 iOnlineCount = 4; //在线人数
+    }
+    int32 iResultID = 1;
+    repeated RoomInfo mRoomInfo = 2;
+}
+
+//E_MJ_MSGID_LOGIN_ROOM_CS
+message TMJMsgRespLoginRoom
+{
+    sint32 iResultID = 1; //返回结果: 0.成功，其他失败
+    sint32 iStatue = 2;   //玩家状态 5：游戏中  8：匹配中
+    sint32 iMatchTime = 3; //剩余匹配时间 
+}
+
+message PlayerInfo
+{
+    sint64      lPlayerID     = 1;  //玩家ID
+    sint32      iTableID      = 2;  //桌子ID
+    sint32      iChairID      = 3;  //所在桌子位置
+    string      sNickName     = 4;  //玩家昵称
+    string      sHeadStr      = 5;  //头像路径
+    sint32      iPlayerGender = 6;  //玩家性别 0-未知 1-男 2-女
+    string      sPlayerIP     = 7;  //玩家IP 
+    string      sSignature    = 8;  //玩家签名
+    sint32      iStatue       = 9;  //玩家状态 
+    sint64      lPlayerScore  = 10; //玩家当前筹码
+}
+
+//E_MJ_MSGID_PREMATCH_CS
+message TMJMsgCSPreMatchGame
+{
+    sint32 iResultID = 1; //返回结果: 0.成功，其他失败
+    int32 iBetId = 2;       //场次ID
+    PlayerInfo mPlayerInfo = 3;
+}
+
+//E_MJ_MSGID_MATCH_CS 
+message TMJMsgCSMatchGame
+{
+    sint32 iResultID = 1; //返回结果: 0.成功，其他失败
+    sint32 iOptionType = 2; //0:匹配  1：取消
+    int32 iBetId = 3;       //场次ID
+}
+
+//E_MJ_MSGID_MATCH_2C
+message TMJMsgNotifyEnterGame
+{
+    int32 iResultID = 1;
+    repeated PlayerInfo mPlayerInfo = 2;
+}
+
+//E_MJ_MSGID_REMATCH_CS
+message TMJMsgRespReMatch
+{
+    int32 iResultID = 1;
+    int64 lPlayerID = 2;
+}
+
+//E_MJ_MSGID_EXIT_CS
+message TMJMsgRespExitRoom
+{
+    int32 iResultID = 1;
+    int64 lPlayerID = 2;
+}

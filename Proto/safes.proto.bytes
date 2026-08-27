@@ -1,0 +1,106 @@
+syntax = "proto3";
+
+option cc_generic_services=false;
+
+package HallProto.safes;
+
+//注册
+message RegisterReq
+{
+    string account = 1;//账号(邮箱)
+    string password = 2;//密码
+}
+message RegisterRsp
+{
+    sint32 resultCode = 1;
+}
+
+//获取保险箱账号
+message GetAccountReq
+{
+
+}
+message GetAccountRsp
+{
+    sint32 resultCode = 1;
+    string account = 2;//账号(邮箱) #进入保险箱客户端拉取保险箱账号，如果账号为空说明是第一次使用
+}
+
+//登录
+message LoginReq
+{
+    string account = 1;//账号(邮箱)
+    string password = 2;//密码
+}
+message LoginRsp
+{
+    sint32 resultCode = 1;
+    uint64 balance = 2;//余额
+    //string token = 3;//令牌(暂时不用)
+    sint32 passwd_err_count = 4;//密码错误次数
+}
+
+//存入-req
+message DipositReq
+{
+    uint64 amount = 1;
+    //string token = 2;//令牌(暂时不用)
+}
+//存入-rsp
+message DipositRsp
+{
+    sint32 resultCode = 1;
+    uint64 balance = 2;//保险箱余额
+    uint64 gold = 3;//账户金币余额
+}
+
+//取出-req
+message TakeOutReq
+{
+    uint64 amount = 1;
+    //string token = 2;//令牌(暂时不用)
+}
+//取出-rsp
+message TakeOutRsp
+{
+    sint32 resultCode = 1;
+    uint64 balance = 2;//保险箱余额
+    uint64 gold = 3;//账户金币余额
+}
+
+//修改密码
+message ModifyPasswordReq
+{
+    string oldpassword = 1;//原密码
+    string newpassword = 2;//新密码
+    //string token = 3;//令牌(暂时不用)
+}
+message ModifyPasswordRsp
+{
+    sint32 resultCode = 1;
+    sint32 passwd_err_count = 2;//密码错误次数
+}
+
+//重置密码
+message ResetPasswordReq
+{
+}
+message ResetPasswordRsp
+{
+    sint32 resultCode = 1;
+    string account = 2;//账号(邮箱)
+}
+
+//修改邮箱
+message ModifyMailReq
+{
+    string account = 1;//新的账号(邮箱)
+    string password = 2;//验证密码
+    //string token = 3;//令牌(暂时不用)
+    string old_account = 4;//老的账号(邮箱)
+}
+message ModifyMailRsp
+{
+    sint32 resultCode = 1;
+    sint32 passwd_err_count = 2;//密码错误次数
+}

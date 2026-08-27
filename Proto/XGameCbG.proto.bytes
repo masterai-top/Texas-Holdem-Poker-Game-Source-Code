@@ -1,0 +1,85 @@
+syntax = "proto3";
+
+option cc_generic_services=false;
+
+package XGameCbG;
+
+enum Eum_CbG_Msgid
+{
+    E_MSGID_DEFAULT = 0;
+
+	// 牛仔金币场-消息ID	[MsgID - 12001...12100]
+    E_CBG_MSGID_LOGIN_ROOM_CS       = 12001;     //登录房间[CS]
+	E_CBG_MSGID_ENTER_ROOM_CS		= 12002;    //进入房间[CS]
+	E_CBG_MSGID_EXIT_ROOM_CS		= 12003;	//退出房间[CS]
+    E_CBG_MSGID_GAME_RECORD_LIST_CS = 12004;     //牌局列表[CS]
+    E_CBG_MSGID_GAME_RECORD_GET_CS = 12005;     //牌局详情[CS]
+}
+
+//登录房间消息响应
+// E_CBG_MSGID_LOGIN_ROOM_CS
+message TCbGMsgRespLoginRoom
+{
+    sint32 iResultID = 1;   // 返回结果: 0 成功 其他失败
+    sint32 iStatue   = 2;   // 玩家状态 5 游戏中
+}
+//玩家坐下应答
+//E_CBG_MSGID_ENTER_ROOM_CS
+message TCBGMsgEnterRoomResp
+{
+    sint32 iResultID = 1;    //返回结果: 0-成功; -1.其它错误
+}
+
+//玩家起来应答
+//E_CBG_MSGID_EXIT_ROOM_CS
+message TCBGMsgExitRoomResp
+{
+    sint32 iResultID = 1;  //返回结果: 0.成功, 201.正在游戏中, -1.其它错误
+}
+
+// E_CBG_MSGID_GAME_RECORD_LIST_CS
+message TCbGMsgRespGameRecordList
+{
+    sint32 iResultID      = 1;   // 返回码 0 成功
+    repeated string infos = 2;   // 牌局唯一KEY用它来获取详情信息
+}
+
+
+
+// E_CBG_MSGID_GAME_RECORD_GET_CS
+message TCbGMsgReqGameRecordGet
+{
+    string sRecordKey = 1;   // 牌局KEY
+}
+
+// E_CBG_MSGID_GAME_RECORD_GET_CS
+message TCbGMsgRespGameRecordGet
+{
+    // 区域下注赔付信息
+    message AreaBetInfo
+    {
+        sint32 iAreaID = 1;   // 区域ID
+        sint64 lAmout  = 2;   // 额度    
+    }
+
+    // 牌局记录列表信息
+    message RecordInfo
+    {
+        sint32 iRound                 = 1;    // 局数
+        sint32 iReal                  = 2;    // 是否结算 0 未 1 是 (未结算代表玩家下注的筹码全部返回但不记录在统计数据中)
+        repeated sint32 cowBoyCards   = 3;    // 牛仔手牌
+        repeated sint32 cowGirlCards  = 4;    // 美女手牌
+        repeated sint32 commonCards   = 5;    // 公共牌
+        repeated sint32 areaWins      = 6;    // 击中区域
+        sint64 lBetValue              = 7;    // 当前玩家总下注
+        sint64 lPayValue              = 8;    // 当前玩家总赔付
+        repeated AreaBetInfo betInfos = 9;   // 玩家区域下注
+        repeated AreaBetInfo payInfos = 10;   // 玩家区域赔付
+    }
+    sint32 iResultID = 1;   // 返回码 0 成功
+    RecordInfo info  = 2;   // 详情
+}
+
+
+
+

@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+option cc_generic_services=false;
+
+package XGameHd;
+
+enum Eum_Hd_Msgid
+{
+    E_MSGID_DEFAULT = 0;
+    E_HD_MSGID_LOGIN_ROOM_CS       = 910;     //登录房间消息请求[CS] 
+    E_HD_MSGID_ENTER_ROOM_CS       = 911;     //进入请求 返回[CS]
+    E_HD_MSGID_ENTER_ROOM_2C       = 912;     //进入通知[CS]
+    E_HD_MSGID_EXIT_CS             = 913;     //退出房间请求 返回[CS]
+    E_HD_MSGID_EXIT_2C             = 914;     //退出房间通知
+
+}
+
+//E_HD_MSGID_LOGIN_ROOM_CS
+message THdMsgRespLoginRoom
+{
+    message InfoCfg
+    {
+        repeated int64 lBetNum = 1;
+    }
+    sint32 iResultID = 1; //返回结果: 0.成功，其他失败
+    sint32 iStatue = 2;   //玩家状态 5：游戏中
+    map<sint32, InfoCfg> mapBetNumCfg= 3;// 房间下注配置
+}
+
+message PlayerInfo
+{
+    sint64      lPlayerID     = 1;  //玩家ID
+    sint32      iTableID      = 2;  //桌子ID
+    sint32      iChairID      = 3;  //所在桌子位置
+    string      sNickName     = 4;  //玩家昵称
+    string      sHeadStr      = 5;  //头像路径
+    sint32      iPlayerGender = 6;  //玩家性别 0-未知 1-男 2-女
+    string      sPlayerIP     = 7;  //玩家IP 
+    string      sSignature    = 8;  //玩家签名
+    sint32      iStatue       = 9;  //玩家状态 
+    sint64      lPlayerScore  = 10; //玩家当前筹码
+}
+
+//E_HD_MSGID_ENTER_ROOM_CS
+message THdMsgRespEnterGame
+{
+    int32 iResultID = 1;
+    int32 iSeatNum = 2; 
+    repeated PlayerInfo mCidPlayerInfo = 3; //座位上玩家信息
+    PlayerInfo mSelfPlayerInfo = 4; // 自己玩家信息
+}
+
+//E_HD_MSGID_ENTER_ROOM_2C
+message THdMsgNotifyEnterGame
+{
+    PlayerInfo mPlayerInfo = 1;
+}
+
+//E_HD_MSGID_EXIT_CS
+message THdMsgRespExitRoom
+{
+    int32 iResultID = 1;
+    int64 lPlayerID = 2;
+    int32 iTableID = 3;
+    int32 iChairID = 4;
+}
+
+//E_HD_MSGID_EXIT_2C
+message THdMsgNotifyExitRoom
+{
+    int64 lPlayerID = 1;
+    int32 iTableID = 2;
+    int32 iChairID = 3;
+}

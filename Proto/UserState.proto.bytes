@@ -1,0 +1,89 @@
+syntax = "proto3";
+
+option cc_generic_services=false;
+
+package UserStateProto;
+
+//在线状态
+enum E_Online_State
+{
+    E_ONLINE_STATE_OFFLINE = 0; //离线
+    E_ONLINE_STATE_ONLINE  = 1; //在线
+}
+
+//批量取在线状态请求
+message BatchOnlineStateReq
+{
+    repeated sint64 uidList = 1;  //用户ID列表
+}
+
+//用户在线状态
+message UserOnlineState
+{
+    E_Online_State state = 1;   //在线，离线
+    string accessAddr = 2;      //接入服务器地址
+}
+
+//批量取在线状态应答
+message BatchOnlineStateResp
+{
+    sint32 resultCode = 1;  //结果码
+    map<sint64, UserOnlineState> data = 2;  //用户在线状态数据
+}
+
+//获取游戏状态请求
+message GetGameStateReq
+{
+    sint64 uid = 1;//用户ID
+}
+
+//获取游戏状态应答
+message GetGameStateResp
+{
+    sint32 resultCode = 1;      //结果码
+    string sRoomID = 3;         //RoomID
+    sint32 tableID = 4;         //桌子ID
+    string matchID = 5;         //赛事ID
+    sint32 level = 6;
+    sint64 smallBlind =7;
+    sint64 bigBlind = 8;
+    sint64 minGold = 9;
+    sint64 maxGold = 10;
+    sint32 maxSeat = 11;
+    sint32 gameMode = 12;   //游戏模式
+}
+
+//玩家游戏状态
+message UserGameState
+{
+    string sRoomID    = 1;         //RoomID
+    sint32 tableID    = 2;         //桌子ID
+    sint32 level      = 3;
+    sint64 smallBlind = 4;
+    sint64 bigBlind   = 5;
+    sint64 minGold    = 6;
+    sint64 maxGold    = 7;
+    sint32 maxSeat    = 8;
+    string matchID    = 9;         //赛事ID
+}
+
+//批量取游戏状态请求
+message BatchGameStateReq
+{
+    repeated sint64 uidList = 1;  //用户ID列表
+}
+
+//批量取游戏状态应答
+message BatchGameStateResp
+{
+    sint32 resultCode = 1;  //结果码
+    map<sint64, UserGameState> data = 2;  //用户游戏状态数据， uid:
+}
+
+//获取在线数量应答
+message CountStatisticsResp
+{
+    sint32 resultCode = 1;      //结果码
+    sint64 lCount = 2;          //在线人数
+}
+
