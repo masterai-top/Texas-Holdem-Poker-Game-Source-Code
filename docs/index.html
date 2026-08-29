@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="rrp5Uvgzi-1-rMxUBfhV3wjlNrFqzwnqiA4e3qsOLEM">
+  <title>Jinbei Texas Holdem Poker Game Source Code</title>
+  <meta name="description" content="Jinbei 德州扑克游戏源码，支持经典德州、AOF、短牌、SNG、MTT、奥马哈和大菠萝等 8 个玩法。">
+  <link rel="canonical" href="https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jinbei Texas Holdem Poker Game Source Code">
+  <meta property="og:description" content="金贝德州扑克俱乐部完整源码，覆盖 8 个扑克玩法、俱乐部、金币大厅和赛事系统。">
+  <meta property="og:url" content="https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/">
+  <meta property="og:image" content="https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/Assets/Screenshots/dating.jpg">
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #131b33;
+      --text: #eef3ff;
+      --muted: #aeb9d6;
+      --brand: #63e6be;
+      --line: rgba(255,255,255,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      background: linear-gradient(180deg, #0b1020 0%, #111a32 55%, #0b1020 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 34px 20px 56px; }
+    .hero {
+      padding: 46px 26px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: radial-gradient(circle at top right, rgba(99,230,190,.22), transparent 34%), rgba(19,27,51,.86);
+      box-shadow: 0 24px 70px rgba(0,0,0,.28);
+    }
+    .tag { color: var(--brand); font-weight: 700; letter-spacing: .04em; }
+    h1 { margin: 10px 0 14px; font-size: clamp(30px, 5vw, 54px); line-height: 1.12; }
+    h2 { margin-top: 38px; font-size: 28px; }
+    p { color: var(--muted); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .btn {
+      display: inline-block;
+      padding: 11px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.08);
+      color: var(--text);
+      font-weight: 700;
+    }
+    .btn.primary { background: var(--brand); color: #06110e; border-color: var(--brand); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-top: 18px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(19,27,51,.78);
+    }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; font-size: 14px; }
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+    figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #0f1730;
+    }
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #0b1020;
+    }
+    figcaption { padding: 10px 12px; color: var(--muted); font-size: 14px; }
+    footer { margin-top: 42px; color: var(--muted); font-size: 14px; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Jinbei Texas Holdem Poker Game Source Code",
+    "description": "Jinbei 德州扑克游戏源码，支持经典德州、AOF、短牌、SNG、MTT、奥马哈和大菠萝等 8 个玩法。",
+    "codeRepository": "https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code",
+    "url": "https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/",
+    "programmingLanguage": ["C++", "Unity"],
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Cross-platform",
+    "image": [
+      "https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/Assets/Screenshots/9ren.jpg",
+      "https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/Assets/Screenshots/dating.jpg"
+    ],
+    "isAccessibleForFree": true,
+    "inLanguage": "zh-CN"
+  }
+  </script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="tag">JINBEI CLUB · TEXAS HOLDEM SOURCE CODE</div>
+      <h1>德州扑克游戏源码 Jinbei 俱乐部完整方案</h1>
+      <p>面向德州扑克俱乐部、金币大厅、朋友局、联盟和赛事系统的完整源码展示，支持经典德州、AOF、6+ 短牌、SNG、MTT、德州牛仔、奥马哈、大菠萝 8 个玩法。</p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code">查看 GitHub 仓库</a>
+        <a class="btn" href="#screenshots">查看产品截图</a>
+        <a class="btn" href="sitemap.xml">Sitemap</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>8 个核心玩法</h2>
+      <div class="grid">
+        <div class="card"><h3>经典德州</h3><p>标准 Texas Hold'em 桌局流程。</p></div>
+        <div class="card"><h3>AOF</h3><p>All-in or Fold 快节奏扑克玩法。</p></div>
+        <div class="card"><h3>6+ 短牌</h3><p>Short Deck Poker 玩法支持。</p></div>
+        <div class="card"><h3>SNG</h3><p>Sit and Go 赛事房间与流程。</p></div>
+        <div class="card"><h3>MTT</h3><p>多桌锦标赛与赛事系统。</p></div>
+        <div class="card"><h3>德州牛仔</h3><p>特色德州玩法扩展。</p></div>
+        <div class="card"><h3>奥马哈</h3><p>Omaha Poker 多手牌玩法。</p></div>
+        <div class="card"><h3>大菠萝</h3><p>Open Face Chinese Poker 玩法。</p></div>
+      </div>
+    </section>
+
+    <section id="screenshots">
+      <h2>产品截图</h2>
+      <p>下面图片读取自当前 Pages 发布目录中的 <code>Assets/Screenshots/</code>。对应 GitHub 仓库路径是 <code>docs/Assets/Screenshots/</code>。</p>
+      <div class="screenshots">
+        <figure><img src="Assets/Screenshots/9ren.jpg" alt="Jinbei 德州俱乐部 9 人桌" loading="lazy"><figcaption>9 人桌</figcaption></figure>
+        <figure><img src="Assets/Screenshots/chat.jpg" alt="Jinbei 德州俱乐部聊天系统" loading="lazy"><figcaption>聊天系统</figcaption></figure>
+        <figure><img src="Assets/Screenshots/chuangjian.jpg" alt="Jinbei 德州俱乐部创建房间" loading="lazy"><figcaption>创建房间</figcaption></figure>
+        <figure><img src="Assets/Screenshots/dating%20%282%29.jpg" alt="Jinbei 德州俱乐部大厅截图 2" loading="lazy"><figcaption>大厅截图 2</figcaption></figure>
+        <figure><img src="Assets/Screenshots/dating.jpg" alt="Jinbei 德州俱乐部大厅" loading="lazy"><figcaption>大厅</figcaption></figure>
+        <figure><img src="Assets/Screenshots/juleb.jpg" alt="Jinbei 德州俱乐部列表" loading="lazy"><figcaption>俱乐部列表</figcaption></figure>
+        <figure><img src="Assets/Screenshots/julebu.jpg" alt="Jinbei 德州俱乐部页面" loading="lazy"><figcaption>俱乐部页面</figcaption></figure>
+        <figure><img src="Assets/Screenshots/shezhi.jpg" alt="Jinbei 德州俱乐部设置" loading="lazy"><figcaption>设置</figcaption></figure>
+        <figure><img src="Assets/Screenshots/zhangdan.jpg" alt="Jinbei 德州俱乐部账号系统" loading="lazy"><figcaption>账号系统</figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>源码方案亮点</h2>
+      <div class="grid">
+        <div class="card"><h3>俱乐部体系</h3><p>支持俱乐部、联盟、朋友局和金币大厅等常见业务结构。</p></div>
+        <div class="card"><h3>赛事能力</h3><p>覆盖 SNG、MTT 等赛事流程，便于搭建完整扑克赛事平台。</p></div>
+        <div class="card"><h3>二次开发</h3><p>适合功能扩展、界面换肤、私有化部署和商业演示。</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>本页面用于源码展示、技术研究和合规娱乐系统开发。请根据所在地法律法规合法使用。</p>
+    </footer>
+  </main>
+</body>
+</html>

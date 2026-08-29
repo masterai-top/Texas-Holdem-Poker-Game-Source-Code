@@ -1,6 +1,10 @@
 # Contributing
 
-欢迎提交编译修复、测试、协议文档和安全改进。提交 Issue 时请包含操作系统、编译器、依赖版本、复现步骤、预期结果和实际结果。Pull Request 应聚焦一个问题，说明行为变化并附带相应测试。
+Thank you for your interest in this project.
 
-请勿提交密码、令牌、服务器地址、私人数据或未获授权的第三方资源。
+Before contributing:
 
+1. Keep changes focused and easy to review.
+2. Do not submit secrets, production credentials, or private user data.
+3. Follow local laws and platform policies.
+4. Use issues or pull requests for discussion and review.

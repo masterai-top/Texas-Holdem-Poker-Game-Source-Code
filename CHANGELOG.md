@@ -1,9 +1,8 @@
 # Changelog
 
-本文件记录面向使用者的重要变化。建议从下一次发布开始采用语义化版本。
+## 2026-08-29
 
-## Unreleased
-
-- 优化 README、About、Topics 与项目文档
-- 补充构建、安全和源码范围说明
-
+- Added multilingual README files.
+- Added GitHub Pages landing page under `docs/index.html`.
+- Added product screenshot gallery from `docs/Assets/Screenshots/`.
+- Added sitemap, robots, 404 page, and responsible-use documentation.

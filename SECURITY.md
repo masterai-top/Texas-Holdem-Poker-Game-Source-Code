@@ -1,6 +1,11 @@
 # Security Policy
 
-请勿在公开 Issue 中披露可直接利用的安全漏洞、凭据或私人数据。报告时请提供受影响模块、版本、复现条件和潜在影响，并通过仓库 About 中列出的维护者联系方式私下提交。
+If you discover a security issue, please contact the repository owner privately before public disclosure.
 
-当前公开源码不应被视为已经通过安全、公平性或合规审计。生产部署前需要独立审查随机数、洗牌发牌、身份验证、权限、订单、日志和依赖安全。
+Recommended production hardening:
 
+- Use HTTPS and secure deployment environments.
+- Rotate keys and secrets regularly.
+- Do not commit production credentials.
+- Review payment, wallet, and user account flows carefully.
+- Run security checks before public deployment.
