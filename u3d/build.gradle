@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion '29.0.2'
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    compileOnly fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+    // 总的项目中需要额外添加的内容mavenCentral
+    implementation 'com.android.installreferrer:installreferrer:1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation files("libs/msa_mdid_1.0.13.aar")
+    //
+    implementation files("libs/aliyun-base-2.2.8.1-20230721163000")
+    implementation files("libs/aliyun-facade-2.2.8.1-20230721163000")
+    implementation files("libs/aliyun-face-2.2.8.1-20230721163000")
+    implementation files("libs/aliyun-facelanguage-2.2.8.1-20230721163000")
+    implementation files("libs/aliyun-ocr-2.2.8.1-20230721163000")
+    implementation files("libs/aliyun-photinus-2.2.8.1-20230721163000")
+    implementation files("libs/aliyun-wishverify-2.2.8.1-20230721163000")
+    implementation files("libs/Android-AliyunFaceGuard-10038")
+    implementation files("libs/APSecuritySDK-DeepSec-7.0.1.20220813.jiagu")
+
+
+
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.okio:okio:1.14.0'
+    implementation 'com.alibaba:fastjson:1.2.83_noneautotype'
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+}
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
