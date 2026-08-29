@@ -1,5 +1,11 @@
 # 德州撲克遊戲原始碼｜Jinbei 俱樂部完整解決方案
 
+## 多語言 README
+
+- [简体中文 README](README.md)
+- [English README](README.en.md)
+
+
 面向德州撲克俱樂部、金幣大廳、賽事系統和多玩法房間的完整遊戲原始碼方案。專案展示為 **Jinbei 俱樂部**，覆蓋經典德州、AOF、6+ 短牌、SNG、MTT、德州牛仔、奧馬哈、大菠蘿等 8 個玩法，適合用於棋牌產品展示、技術評估、二次開發和私有化部署。
 
 ## 核心玩法
@@ -14,10 +20,6 @@
 - 大菠蘿：Open Face Chinese Poker 玩法
 
 ## 產品截圖
-
-
-## 📸 界面展示,真实产品演示：
-
 
 
 ![Jinbei 德州俱乐部 9 人桌](docs/Assets/Screenshots/9ren.jpg)
@@ -38,7 +40,9 @@
 
 ![Jinbei 德州俱乐部账号系统](docs/Assets/Screenshots/zhangdan.jpg)
 ---
-
+## 联系
+- Telegram：[@xuzongbin001](https://t.me/xuzongbin001)
+- Email：[masterai918@gmail.com](mailto:masterai918@gmail.com)
 ## 方案能力
 
 - 多玩法撲克遊戲大廳與俱樂部體系
@@ -64,10 +68,7 @@
 
 https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/
 
-## 多語言 README
 
-- [简体中文 README](README.md)
-- [English README](README.en.md)
 
 ## 相關關鍵詞
 
