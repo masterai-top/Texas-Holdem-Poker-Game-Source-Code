@@ -1,0 +1,19 @@
+name: HTML Check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required files
+        run: |
+          test -f docs/index.html
+          test -f docs/sitemap.xml
+          test -f docs/robots.txt
