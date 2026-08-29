@@ -1,5 +1,8 @@
 # Texas Holdem Poker Game Source Code | Jinbei Club Complete Solution
+## Multilingual README
 
+- [简体中文 README](README.md)
+- [繁體中文 README](README.zh-TW.md)
 This repository presents a complete Texas Holdem poker game source code solution for poker clubs, coin lobbies, tournament systems, and multi-mode poker rooms. The showcased product is **Jinbei Club**, covering 8 gameplay modes: Classic Texas Holdem, AOF, 6+ Short Deck, SNG, MTT, Cowboy Holdem, Omaha, and Pineapple Poker.
 
 ## Core Gameplay Modes
@@ -15,7 +18,7 @@ This repository presents a complete Texas Holdem poker game source code solution
 
 ## Product Screenshots
 
-The following images are loaded directly from `docs/Assets/Screenshots/`.
+
 
 ![Jinbei Texas Holdem Club 9-seat table](docs/Assets/Screenshots/9ren.jpg)
 
@@ -23,7 +26,7 @@ The following images are loaded directly from `docs/Assets/Screenshots/`.
 
 ![Jinbei Texas Holdem Club room creation](docs/Assets/Screenshots/chuangjian.jpg)
 
-![Jinbei Texas Holdem Club lobby 2](docs/Assets/Screenshots/dating%20%282%29.jpg)
+![Jinbei Texas Holdem Club lobby 2](docs/Assets/Screenshots/dating2.jpg)
 
 ![Jinbei Texas Holdem Club lobby](docs/Assets/Screenshots/dating.jpg)
 
