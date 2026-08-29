@@ -18,7 +18,15 @@
 - 德州牛仔：特色德州玩法擴展
 - 奧馬哈：Omaha Poker 多手牌玩法
 - 大菠蘿：Open Face Chinese Poker 玩法
+## 🚀 产品演示视频（强烈推荐观看）
 
+[[德州扑克完整功能演示](https://youtu.be/job2jRcSnl4?si=p3AjN6trak3jStfc)](https://youtu.be/job2jRcSnl4?si=p3AjN6trak3jStfc)
+
+**德州扑克完整功能演示视频**  
+金币大厅 + 俱乐部系统 + 多锦标赛 + 短牌玩法 + 实时对战
+
+视频时长约 10分钟，展示了系统的核心功能流程。
+点击上方图片直接跳转 YouTube 播放。
 ## 產品截圖
 
 
