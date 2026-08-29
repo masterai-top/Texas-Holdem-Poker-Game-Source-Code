@@ -33,8 +33,6 @@
 点击上方图片直接跳转 YouTube 播放。
 ## 📸 界面展示,真实产品演示：
 
-
-
 ![Jinbei 德州俱乐部 9 人桌](docs/Assets/Screenshots/9ren.jpg)
 
 ![Jinbei 德州俱乐部聊天系统](docs/Assets/Screenshots/chat.jpg)
@@ -56,6 +54,10 @@
 ![Stars](https://img.shields.io/github/stars/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-?style=social)
 ![Last Update](https://img.shields.io/github/last-commit/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-)
 
+
+## 联系
+- Telegram：[@xuzongbin001](https://t.me/xuzongbin001)
+- Email：[masterai918@gmail.com](mailto:masterai918@gmail.com)
 ## 源码目录
 
 ```text
