@@ -1,23 +1,26 @@
-# 德州扑克源码：C++ Texas Hold'em 游戏服务端
+# 德州扑克游戏源码｜Jinbei 俱乐部完整解决方案
 
 [![Language](https://img.shields.io/badge/language-C%2B%2B-00599c?logo=cplusplus)](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code)
 [![Stars](https://img.shields.io/github/stars/masterai-top/Texas-Holdem-Poker-Game-Source-Code?style=flat)](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code/stargazers)
 [![License](https://img.shields.io/github/license/masterai-top/Texas-Holdem-Poker-Game-Source-Code)](./LICENSE)
 
-这是一个以 C++ 编写的德州扑克源码项目，仓库包含游戏服务端、登录服务、订单服务、用户信息、坐下/站起、牌局状态及 Tars 协议等代码，可用于学习多人扑克游戏的服务端结构、通信协议和牌局业务流程。
+面向德州扑克俱乐部、金币大厅、赛事系统和多玩法房间的完整游戏源码方案。项目展示为 **Jinbei 俱乐部**，覆盖经典德州、AOF、6+ 短牌、SNG、MTT、德州牛仔、奥马哈、大菠萝等 8 个玩法，适合用于棋牌产品展示、技术评估、二次开发和私有化部署。
+
 
 **English:** C++ Texas Hold'em poker server source code with game-session, login, order, user and Tars protocol modules.
 
 > 当前公开仓库以服务端代码、协议文件和演示资源为主。是否包含客户端、数据库脚本、管理后台及商业部署组件，请以实际目录和授权说明为准。
 
-## 项目内容
+## 核心玩法
 
-- C++ 德州扑克游戏服务端代码
-- 登录服务与用户信息模块
-- 牌桌坐下、站起及牌局状态处理
-- 订单相关服务接口
-- Tars 协议定义与服务实现
-- Makefile 编译入口
+- 经典德州：标准 Texas Hold'em 游戏流程
+- AOF：All-in or Fold 快节奏玩法
+- 6+ 短牌：Short Deck Poker 玩法支持
+- SNG：单桌 / 多桌 Sit and Go 赛事
+- MTT：多桌锦标赛赛事系统
+- 德州牛仔：特色德州玩法扩展
+- 奥马哈：Omaha Poker 多手牌玩法
+- 大菠萝：Open Face Chinese Poker 玩法
 
 ## 🚀 产品演示视频（强烈推荐观看）
 
@@ -40,7 +43,26 @@
 ![微信图片_20241029191835](https://github.com/user-attachments/assets/5ac3245e-d395-4837-b347-dcffd94daf14)
 ![微信图片_20241029191822](https://github.com/user-attachments/assets/50a898dc-2e69-471b-9022-cc18eb7b5f69)
 ![微信图片_20241029191811 - 副本](https://github.com/user-attachments/assets/ac84cd0c-6eea-4009-ad63-2bcb574847cb)
+//////////////////////////////////////
 
+
+![Jinbei 德州俱乐部 9 人桌](docs/Assets/Screenshots/9ren.jpg)
+
+![Jinbei 德州俱乐部聊天系统](docs/Assets/Screenshots/chat.jpg)
+
+![Jinbei 德州俱乐部创建房间](docs/Assets/Screenshots/chuangjian.jpg)
+
+![Jinbei 德州俱乐部大厅 2](docs/Assets/Screenshots/dating2.jpg)
+
+![Jinbei 德州俱乐部大厅](docs/Assets/Screenshots/dating.jpg)
+
+![Jinbei 德州俱乐部俱乐部列表](docs/Assets/Screenshots/juleb.jpg)
+
+![Jinbei 德州俱乐部俱乐部页面](docs/Assets/Screenshots/julebu.jpg)
+
+![Jinbei 德州俱乐部设置](docs/Assets/Screenshots/shezhi.jpg)
+
+![Jinbei 德州俱乐部账号系统](docs/Assets/Screenshots/zhangdan.jpg)
 ---
 ![Stars](https://img.shields.io/github/stars/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-?style=social)
 ![Last Update](https://img.shields.io/github/last-commit/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-)
