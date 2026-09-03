@@ -7,12 +7,6 @@
 [![License](https://img.shields.io/github/license/masterai-top/Texas-Holdem-Poker-Game-Source-Code)](./LICENSE)
 
 
-## 多语言 README
-
-
-- [English README](README.en.md)
-- [繁體中文 README](README.zh-TW.md)
-
 
 面向德州扑克俱乐部、金币大厅、赛事系统和多玩法房间的完整游戏源码方案。项目展示为 **Jinbei 俱乐部**，覆盖经典德州、AOF、6+ 短牌、SNG、MTT、德州牛仔、奥马哈、大菠萝等 8 个玩法，适合用于棋牌产品展示、技术评估、二次开发和私有化部署。
 
