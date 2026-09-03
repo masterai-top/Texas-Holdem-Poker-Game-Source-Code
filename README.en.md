@@ -2,12 +2,6 @@
 
 # Eight-Variant Texas Holdem Client and Server Project|Texas Holdem poker game source code
 
-## Multilingual README
-
-
-- [简体中文 README](README.md)
-
-
 This repository presents a complete Texas Holdem poker game source code solution for poker clubs, coin lobbies, tournament systems, and multi-mode poker rooms. The showcased product is **Jinbei Club**, covering 8 gameplay modes: Classic Texas Holdem, AOF, 6+ Short Deck, SNG, MTT, Cowboy Holdem, Omaha, and Pineapple Poker.
 
 
