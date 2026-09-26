@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/</loc>
-    <lastmod>2026-08-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-cn/texas-holdem-source-code.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-cn/poker-lobby-source-code.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-cn/poker-alliance-system.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-cn/poker-tournament-source-code.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-tw/texas-holdem-source-code.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-tw/poker-lobby-source-code.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-tw/poker-alliance-system.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-tw/poker-tournament-source-code.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/en/texas-holdem-source-code.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/en/poker-lobby-tournament-platform.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

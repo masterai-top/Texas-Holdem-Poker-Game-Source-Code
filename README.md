@@ -1,229 +1,87 @@
 [简体中文](README.md) | [繁體中文](README.zh-TW.md) | [English](README.en.md)
 
-# 八种玩法德州扑克客户端与服务端项目|德州扑克游戏源码｜ 德州俱乐部完整解决方案
+# 德州扑克游戏源码：大厅、俱乐部、联盟与锦标赛系统
 
-[![Language](https://img.shields.io/badge/language-C%2B%2B-00599c?logo=cplusplus)](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code)
-[![Stars](https://img.shields.io/github/stars/masterai-top/Texas-Holdem-Poker-Game-Source-Code?style=flat)](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code/stargazers)
-[![License](https://img.shields.io/github/license/masterai-top/Texas-Holdem-Poker-Game-Source-Code)](./LICENSE)
+这是以 **Jinbei 俱乐部**真实产品为基础的德州扑克游戏源码项目。仓库公开内容以 C++ 服务端、Tars 协议、牌局状态逻辑和产品演示资源为主，产品形态覆盖德州大厅、俱乐部、好友桌/私人局、联盟、金币大厅、SNG 与 MTT 锦标赛。适合评估多人扑克服务端架构、牌局流程、赛事系统和二次开发方案。
 
+> 仓库是否包含可直接上线的客户端、数据库、运营后台及商业部署组件，请以实际目录与授权说明为准。本文只描述线上代码和截图能够验证的内容。
 
+## 产品截图
 
-面向德州扑克俱乐部、金币大厅、赛事系统和多玩法房间的完整游戏源码方案。项目展示为 **Jinbei 俱乐部**，覆盖经典德州、AOF、6+ 短牌、SNG、MTT、德州牛仔、奥马哈、大菠萝等 8 个玩法，适合用于棋牌产品展示、技术评估、二次开发和私有化部署。
+| 德州大厅 | 俱乐部 | 9 人牌桌 |
+|---|---|---|
+| ![德州扑克大厅源码产品界面](docs/Assets/Screenshots/dating.jpg) | ![德州俱乐部与联盟产品界面](docs/Assets/Screenshots/julebu.jpg) | ![德州扑克九人桌游戏界面](docs/Assets/Screenshots/9ren.jpg) |
 
+| 创建房间/好友局 | 实时聊天 | 账号与账单 |
+|---|---|---|
+| ![创建德州朋友局房间](docs/Assets/Screenshots/chuangjian.jpg) | ![牌桌实时聊天系统](docs/Assets/Screenshots/chat.jpg) | ![玩家账号账单界面](docs/Assets/Screenshots/zhangdan.jpg) |
 
-**English:** C++ Texas Hold'em poker server source code with game-session, login, order, user and Tars protocol modules.
+## 产品功能
 
+- **大厅与房间入口**：玩家从大厅查看桌局和赛事入口，进入不同玩法与房间；大厅截图可验证真实产品结构。
+- **俱乐部与联盟**：支持俱乐部列表、俱乐部详情、成员场景及联盟型运营结构；适合朋友局、私人局与多俱乐部组织。
+- **好友桌/私人房**：通过创建房间组织固定玩家对局，适用于熟人娱乐和内部赛事场景。
+- **赛事系统**：涵盖 SNG 和 MTT 两类赛事形态，支持从赛事入口、报名到多桌竞赛的产品流程。
+- **用户与订单模块**：仓库包含用户信息、查询用户以及订单服务的协议和实现入口。
+- **实时交互**：产品截图展示牌桌聊天、设置及账户相关页面；牌局代码包含坐下、站起与游戏状态处理。
 
-> 当前公开仓库以服务端代码、协议文件和演示资源为主。是否包含客户端、数据库脚本、管理后台及商业部署组件，请以实际目录和授权说明为准。
+## 八种玩法
 
+1. **经典德州扑克**：公共牌、下注轮次和标准 Texas Hold'em 桌局体验。
+2. **AOF**：All-in or Fold 快节奏模式，缩短单局决策链路。
+3. **6+ 短牌**：Short Deck 使用精简牌组的德州变体。
+4. **SNG**：人数满足后开赛的 Sit and Go 单桌或小型赛事。
+5. **MTT**：多桌锦标赛，面向德州比赛、德州赛事和锦标赛场景。
+6. **德州牛仔**：产品中的特色扩展玩法。
+7. **奥马哈**：Omaha Poker 多底牌玩法入口。
+8. **大菠萝**：Open Face Chinese Poker 玩法入口。
 
-## 核心玩法
+## 典型使用流程
 
+玩家登录后进入德州大厅，选择金币大厅、俱乐部或赛事入口；普通桌可查看房间并坐下，好友局可先创建房间再邀请玩家；赛事玩家选择 SNG 或 MTT，完成报名后进入对应牌桌。服务端通过协议接收请求，执行业务处理和状态变化，再向客户端返回结果。实际支付、结算、反作弊和运营规则应结合完整授权组件及部署环境审计。
 
-- 经典德州：标准 Texas Hold'em 游戏流程
-- AOF：All-in or Fold 快节奏玩法
-- 6+ 短牌：Short Deck Poker 玩法支持
-- SNG：单桌 / 多桌 Sit and Go 赛事
-- MTT：多桌锦标赛赛事系统
-- 德州牛仔：特色德州玩法扩展
-- 奥马哈：Omaha Poker 多手牌玩法
-- 大菠萝：Open Face Chinese Poker 玩法
+## 技术与源码结构
 
-
-## 🚀 产品演示视频（强烈推荐观看）
-
-
-[[德州扑克完整功能演示](https://youtu.be/job2jRcSnl4?si=p3AjN6trak3jStfc)](https://youtu.be/job2jRcSnl4?si=p3AjN6trak3jStfc)
-
-
-**德州扑克完整功能演示视频**  
-金币大厅 + 俱乐部系统 + 多锦标赛 + 短牌玩法 + 实时对战
-
-
-视频时长约 10分钟，展示了系统的核心功能流程。
-点击上方图片直接跳转 YouTube 播放。
-## 📸 界面展示,真实产品演示：
-
-
-![Jinbei 德州俱乐部 9 人桌](docs/Assets/Screenshots/9ren.jpg)
-
-
-![Jinbei 德州俱乐部聊天系统](docs/Assets/Screenshots/chat.jpg)
-
-
-![Jinbei 德州俱乐部创建房间](docs/Assets/Screenshots/chuangjian.jpg)
-
-
-![Jinbei 德州俱乐部大厅 2](docs/Assets/Screenshots/dating2.jpg)
-
-
-![Jinbei 德州俱乐部大厅](docs/Assets/Screenshots/dating.jpg)
-
-
-![Jinbei 德州俱乐部俱乐部列表](docs/Assets/Screenshots/juleb.jpg)
-
-
-![Jinbei 德州俱乐部俱乐部页面](docs/Assets/Screenshots/julebu.jpg)
-
-
-![Jinbei 德州俱乐部设置](docs/Assets/Screenshots/shezhi.jpg)
-
-
-![Jinbei 德州俱乐部账号系统](docs/Assets/Screenshots/zhangdan.jpg)
----
-![Stars](https://img.shields.io/github/stars/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-?style=social)
-![Last Update](https://img.shields.io/github/last-commit/masterai-top/Texas-Holdem-Poker-Game-Source-Code-Online-AI-Multiplayer-)
-
-
-## 联系
-- Telegram：[@xuzongbin001](https://t.me/xuzongbin001)
-- Email：[masterai918@gmail.com](mailto:masterai918@gmail.com)
-## 源码目录
-
+项目可见技术资产包括 **C++、Makefile、Tars 接口定义和 Unity 资源目录**。主要代码入口：
 
 ```text
-.
-|-- Bag/                    # 相关代码与资源目录
-|-- Screenshots/            # 产品截图
-|-- Video/                  # 演示视频资源
-|-- LoginProto.tars         # 登录协议定义
-|-- LoginServant.tars       # 登录服务接口
-|-- LoginServantImp.cpp     # 登录服务实现
-|-- LoginServer.cpp         # 登录服务入口
-|-- OrderServant.tars       # 订单服务接口
-|-- OrderServer.cpp         # 订单服务入口
-|-- gamestation.cpp         # 牌局状态相关逻辑
-|-- sitdown.cpp             # 坐下流程
-|-- standup.cpp             # 站起流程
-|-- userinfo.cpp            # 用户信息逻辑
-|-- Processor.cpp           # 业务处理模块
-|-- makefile                # 编译配置
-`-- LICENSE                 # 许可证
+LoginProto.tars / LoginServant.tars / LoginServantImp.cpp / LoginServer.cpp
+    登录协议、服务接口、实现与服务入口
+OrderServant.tars / OrderServer.cpp
+    订单接口与服务入口
+gamestation.cpp / Processor.cpp
+    牌局状态与业务处理
+sitdown.cpp / standup.cpp
+    玩家入座和离桌流程
+userinfo.cpp / getuserinfo.cpp
+    用户信息相关逻辑
+Proto/ / u3d/ / Screenshots/ / docs/
+    协议、客户端资源、真实截图和技术文档
 ```
 
+构建前请检查 `makefile` 中的编译器、头文件、链接库和目标环境，并准备匹配版本的 Tars/C++ 依赖。不要假设仓库下载后无需环境配置即可生产部署。
 
-## 快速下载
+## 在线专题文档
 
+- [德州扑克源码与代码模块](https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-cn/texas-holdem-source-code.html)
+- [德州大厅源码与玩家流程](https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-cn/poker-lobby-source-code.html)
+- [德州联盟与俱乐部系统](https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-cn/poker-alliance-system.html)
+- [德州比赛、MTT 与锦标赛源码](https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/zh-cn/poker-tournament-source-code.html)
+- [English product overview](https://masterai-top.github.io/Texas-Holdem-Poker-Game-Source-Code/en/texas-holdem-source-code.html)
 
-### Download ZIP
-
-
-点击仓库页面右上方 **Code → Download ZIP** 下载德州扑克源码。
-
-
-### Git 克隆
-
+## 下载、演示与使用
 
 ```bash
 git clone https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code.git
 cd Texas-Holdem-Poker-Game-Source-Code
 ```
 
+- [完整产品演示视频](https://youtu.be/job2jRcSnl4?si=p3AjN6trak3jStfc)
+- [构建准备](docs/build-guide.md) · [服务端架构](docs/server-architecture.md) · [协议指南](docs/protocol-guide.md)
+- [牌局流程](docs/game-flow.md) · [安全与合规](docs/security-compliance.md) · [常见问题](docs/faq.md)
 
-## 构建前准备
+## 合规与授权
 
+扑克软件在不同地区可能受到游戏、竞赛、支付、年龄和数据保护法规约束。部署或商业使用前应核对许可证、第三方资产授权、随机数与牌局日志、隐私安全及当地法律。严禁用于违法活动。开源范围以 [LICENSE](LICENSE) 为准。
 
-该项目包含 C++、Makefile 和 Tars 协议文件。构建前请检查 `makefile` 中配置的编译器、头文件目录、链接库和目标环境，并准备与源码版本匹配的 Tars/C++ 依赖。
-
-
-```bash
-make
-```
-
-
-不同服务器环境的依赖路径可能不同，不能保证下载后无需配置即可完成编译。建议先阅读：
-
-
-- [`docs/build-guide.md`](./docs/build-guide.md)
-- [`docs/server-architecture.md`](./docs/server-architecture.md)
-- [`docs/protocol-guide.md`](./docs/protocol-guide.md)
-
-
-## 核心模块
-
-
-### 登录服务
-
-
-`LoginProto.tars`、`LoginServant.tars`、`LoginServantImp.cpp` 和 `LoginServer.cpp` 构成登录协议与服务实现的主要入口。
-
-
-### 牌局流程
-
-
-`gamestation.cpp`、`sitdown.cpp`、`standup.cpp` 和 `Processor.cpp` 等文件负责牌局状态及相关业务处理。阅读时建议从协议输入、状态变化和响应输出三个方向梳理调用关系。
-
-
-### 用户与订单
-
-
-`userinfo.cpp`、`getuserinfo.cpp` 以及 `OrderServant.tars`、`OrderServer.cpp` 等文件提供用户信息和订单相关代码入口。
-
-
-## 截图与视频
-
-
-真实界面图片保存在 [`Screenshots`](./Screenshots) 目录，视频资源保存在 [`Video`](./Video) 目录。
-
-
-演示视频：[Texas Hold'em Poker Demo](https://youtu.be/job2jRcSnl4)
-
-
-
-
-## 适用场景
-
-
-- 学习 C++ 多人游戏服务端架构
-- 研究德州扑克牌局状态与用户流程
-- 阅读 Tars 接口和服务实现
-- 制作扑克游戏服务器原型
-- 为已有项目补充协议、测试和文档
-
-
-## 使用与合规说明
-
-
-扑克软件可能受到不同国家或地区关于游戏、竞赛、支付和数据保护的法律限制。部署或商业使用前，请确认：
-
-
-- 仓库许可证与商业授权范围
-- 第三方代码、图片、音频和字体的许可证
-- 所在地区对扑克软件和虚拟货币的规定
-- 用户年龄、隐私、支付和数据安全要求
-- 服务端随机数、牌局日志和反作弊机制是否经过审计
-
-
-严禁将本项目用于违法活动。
-
-
-## 文档导航
-
-
-- [德州扑克源码说明](./docs/texas-holdem-source-code.md)
-- [C++ 游戏服务端架构](./docs/server-architecture.md)
-- [构建与部署准备](./docs/build-guide.md)
-- [Tars 协议阅读指南](./docs/protocol-guide.md)
-- [牌局流程与状态管理](./docs/game-flow.md)
-- [安全、随机数与合规](./docs/security-compliance.md)
-- [常见问题](./docs/faq.md)
-
-
-## 参与贡献
-
-
-欢迎通过 Issue 或 Pull Request 提交编译修复、协议说明、测试案例、文档和安全改进。报告问题时，请提供操作系统、编译器版本、依赖版本、执行命令及完整错误信息。
-
-
-## 联系
-
-
-开源使用范围以 [`LICENSE`](./LICENSE) 为准。商业授权、完整组件范围和部署支持应在使用前单独确认。
-
-
-- Issues：<https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code/issues>
-- Telegram：`@xuzongbin001`
-- Email：`masterai918@gmail.com`
-
-
-关键词：德州源码、德州扑克源码、C++ 扑克游戏服务端、Texas Hold'em source code、poker server、multiplayer poker game。
+联系：Telegram `@xuzongbin001` · Email `masterai918@gmail.com` · [GitHub Issues](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code/issues)
